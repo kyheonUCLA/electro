@@ -10,13 +10,14 @@ function Particle(_charge, _pos, _vel, _r, _col, _mass){
     this.select = false
     this.clicked = false
 
-    this.show = function(){
+    this.show = function(){ 
         push()
         if (this.clicked){
             stroke('orange')
         } else {
             stroke('black')
         }
+        //comment that is useless
 
         strokeWeight(3)
         if (this.charge < 0){
